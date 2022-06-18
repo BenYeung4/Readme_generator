@@ -15,9 +15,11 @@ function generateMarkdown(data) {
   return `
 # ${data.Title}
 https://github.com/${data.Username}/${data.Title}
+
 #Description
 ${data.Description}
-*[Table of Content]
+
+#Table of Content
 *[Installation](#installation)
 *[Usage](#usage)
 *[Contributing](#contributing)
