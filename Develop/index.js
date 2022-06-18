@@ -26,8 +26,8 @@ const questions = [
   // },
   {
     type: "input",
-    name: "Install",
-    message: "What does the user need to install to run this app?",
+    name: "Installation",
+    message: "What does the user need to install for the program to run?",
   },
   {
     type: "input",
