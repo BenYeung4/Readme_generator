@@ -16,10 +16,10 @@ function generateMarkdown(data) {
 # ${data.Title}
 https://github.com/${data.Username}/${data.Title}
 
-# Description
+## Description
 ${data.Description}
 
-# Table of Content
+## Table of Content
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
@@ -27,27 +27,27 @@ ${data.Description}
 - [Tests](#Tests)
 - [Questions](#Questions)
 
-# Installation
+## Installation
 Please install the following dependencies to run the application properly:
 
 ${data.Installaion}
 
-# Usage
+## Usage
 Below are the instructions and examples for use: 
 ${data.Usage}
 
-# Contributors:
+## Contributors:
 ${data.Contributing}
 
-# License under the following:
+## License under the following:
  ${data.License}
 ![GitHub licnese](https://img.shields.io/badge/license-MIT-blue.svg)
 
-# Tests
+## Tests
 The following are needed to run the test:
 ${data.Tests}
 
-# Questions
+## Questions
 If you have any questions, please open a issue or contact ${data.Username} directly at : ${data.Email}.
 `;
 }
