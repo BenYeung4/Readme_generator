@@ -1,10 +1,12 @@
 // TODO: Include packages needed for this application
-const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./generateMarkdown");
+
+const fs = require("fs");
+const generatorMarkdown = require("./utils/generateMarkdown");
 const util = require("util");
 
 // TODO: Create an array of questions for user input
+
 const questions = [
   {
     type: "input",
@@ -17,11 +19,11 @@ const questions = [
     message:
       "What is the project about?  Give a detailed description of your project.",
   },
-  {
-    type: "input",
-    name: "Content",
-    message: "Table of Content",
-  },
+  // {
+  //   type: "input",
+  //   name: "Content",
+  //   message: "Table of Content",
+  // },
   {
     type: "input",
     name: "Install",
@@ -50,7 +52,7 @@ const questions = [
   {
     type: "input",
     name: "Contact",
-    message: "Contact infor for inquiries",
+    message: "Contact info for inquiries",
   },
   {
     type: "input",
@@ -78,14 +80,15 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function (data) {
+    writeToFile("README.md", generatorMarkdown(data));
+    console.log(data);
+  });
+}
 
 // Function call to initialize app
 init();
-
-// AS A developer
-// I WANT a README generator
-// SO THAT I can quickly create a professional README for a new project
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
