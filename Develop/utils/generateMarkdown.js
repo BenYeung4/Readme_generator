@@ -23,8 +23,8 @@ ${data.Description}
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Contributing](#Contributing)
-- [License](#License)
 - [Tests](#Tests)
+- [License](#License)
 - [Questions](#Questions)
 
 ## Installation
@@ -39,13 +39,12 @@ ${data.Usage}
 ## Contributors:
 ${data.Contributing}
 
-## License under the following:
- ${data.License}
-![GitHub licnese](https://img.shields.io/badge/license-MIT-blue.svg)
-
 ## Tests
 The following are needed to run the test:
 ${data.Tests}
+
+## License under the following:
+ ${data.License}
 
 ## Questions
 If you have any questions, please open a issue or contact ${data.Username} directly at : ${data.Email}.
