@@ -1,6 +1,6 @@
 
 # 1
-[![GNU License](https://img.shields.io/badge/License-GNU-red)(https://choosealicense.com/licenses/gpl-3.0/)
+[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)(https://choosealicense.com/licenses/apache-2.0/)]
 ## Description
 2
 
@@ -32,8 +32,8 @@ The following are needed to run the test:
 6
 
 ## License under the following:
- GNU License
- ###[![GNU License](https://img.shields.io/badge/License-GNU-red)(https://choosealicense.com/licenses/gpl-3.0/)
+ Apache License
+ ###[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)(https://choosealicense.com/licenses/apache-2.0/)]
  MISSING LICENSE LINK
 
 ## Questions

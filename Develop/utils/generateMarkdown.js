@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(License) {
   if (License === "Apache License") {
-    return `[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)`;
+    return `[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)(https://choosealicense.com/licenses/apache-2.0/)]`;
   } else if (License === "GNU License") {
-    return `[![GNU License](https://img.shields.io/badge/License-GNU-red)(https://choosealicense.com/licenses/gpl-3.0/)`;
+    return `[![GNU License](https://img.shields.io/badge/License-GNU-red)(https://choosealicense.com/licenses/gpl-3.0/)]`;
   } else if (License === "MIT License") {
-    return `[![MIT License](https://img.shields.io/badge/License-MIT-blue)(https://choosealicense.com/licenses/mit/)`;
+    return `[![MIT License](https://img.shields.io/badge/License-MIT-blue)(https://choosealicense.com/licenses/mit/)]`;
   } else {
     return "MISSING LICENSE BADGE";
   }
