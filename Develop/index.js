@@ -25,7 +25,8 @@ const questions = [
   {
     type: "input",
     name: "Description",
-    message: "Provide detail description of this project",
+    message:
+      "Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:",
     validate: (nameInput) => {
       if (nameInput) {
         return true;
@@ -38,17 +39,37 @@ const questions = [
   {
     type: "input",
     name: "Installation",
-    message: "What does the user need to install for the program to run?",
+    message:
+      "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log(
+          "Please provide a list of what needs to be installed for the program:"
+        );
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Usage",
-    message: "How is the app used? Provide instructions",
+    message: "Provide instructions and examples for use:",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please state the instructions on how the app is used:");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Contributing",
-    message: "Who contributed to this project?",
+    message:
+      "List your collaborators, if any, with links to their GitHub profiles:",
   },
   {
     type: "input",
@@ -56,24 +77,38 @@ const questions = [
     message: "What commands are needed to test this app?",
   },
   {
-    type: "input",
+    type: "checkbox",
     name: "License",
-    message: "What license is being used?",
-  },
-  {
-    type: "input",
-    name: "Contact",
-    message: "Contact info for inquiries",
+    message: "What license is used for the application?",
+    choices: ["Apache License", "GNU License", "MIT License", "N/A"],
   },
   {
     type: "input",
     name: "Username",
     message: "What is your Github username?",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please enter your GitHub username!");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Email",
     message: "What is your email?",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log(
+          "Please enter your Email that you would like to recieve messages in!"
+        );
+        return false;
+      }
+    },
   },
 ];
 
@@ -85,7 +120,7 @@ function writeToFile(fileName, data) {
     if (err) {
       return console.log(err);
     } else {
-      console.log("success");
+      console.log("README.md has been created");
     }
   });
 }
@@ -93,7 +128,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then(function (data) {
-    writeToFile("README.md", generatorMarkdown(data));
+    writeToFile("../Example/README.md", generatorMarkdown(data));
     console.log(data);
   });
 }
