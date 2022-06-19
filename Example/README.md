@@ -22,7 +22,7 @@ Below are the instructions and examples for use:
 4
 
 Screenshot located at:
-  ![Screenshot](assets/images/screenshot.png)
+  ![Screenshot](../assets/images/screenshot.png)
 
 ## Contributors:
 5

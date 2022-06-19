@@ -56,7 +56,7 @@ Below are the instructions and examples for use:
 ${data.Usage}
 
 Screenshot located at:
-  ![Screenshot](assets/images/screenshot.png)
+  ![Screenshot](../assets/images/screenshot.png)
 
 ## Contributors:
 ${data.Contributing}
