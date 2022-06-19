@@ -31,7 +31,6 @@ assets/images/Screenshot.png
 ![Screenshot](https://user-images.githubusercontent.com/52897163/174462984-c4b06b85-488e-4cf1-b7cf-c89a42bb08ed.png)
 
 Walkthrough Video:
-
 https://drive.google.com/file/d/1Wnkm9A4vaTpVsor3dnalgd5C675FJk6k/view
 
 ## Contributors:
