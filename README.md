@@ -28,6 +28,7 @@ Git Clone repository, npm int inquirer, cd into develop folder, node index.js an
 
 Screenshot located at:
 assets/images/Screenshot.png
+![Screenshot](https://user-images.githubusercontent.com/52897163/174462984-c4b06b85-488e-4cf1-b7cf-c89a42bb08ed.png)
 
 ## Contributors:
 
