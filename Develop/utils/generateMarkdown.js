@@ -56,7 +56,7 @@ Below are the instructions and examples for use:
 ${data.Usage}
 
 Screenshot located at:
-  ![Screenshot](./assets/images/screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/52897163/174462984-c4b06b85-488e-4cf1-b7cf-c89a42bb08ed.png)
 
 ## Contributors:
 ${data.Contributing}
