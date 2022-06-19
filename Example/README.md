@@ -1,8 +1,8 @@
 
-# ls
+# 1
 [![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
 ## Description
-1
+2
 
 ## Table of Content
 - [Installation](#Installation)
@@ -15,21 +15,21 @@
 ## Installation
 Please install the following dependencies to run the application properly:
 
-2
+3
 
 ## Usage:
 Below are the instructions and examples for use: 
-3
+4
 
 Screenshot located at:
-  ![Screenshot](../assets/images/screenshot.png)
+  ![Screenshot](./assets/images/screenshot.png)
 
 ## Contributors:
-4
+5
 
 ## Tests:
 The following are needed to run the test:
-5
+6
 
 ## License under the following:
  ### [![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
