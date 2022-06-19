@@ -66,9 +66,8 @@ The following are needed to run the test:
 ${data.Tests}
 
 ## License under the following:
- ${data.License}
  ### ${renderLicenseBadge(data.License)}
- ${renderLicenseLink(data.License)}
+ This application is licensed under the ${renderLicenseLink(data.License)}
 
 ## Questions
 If you have any questions, please open a issue or contact the following:

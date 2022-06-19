@@ -1,8 +1,8 @@
 
-# a
-[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
+# Readme Generator
+[![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
 ## Description
-b
+input project info
 
 ## Table of Content
 - [Installation](#Installation)
@@ -15,29 +15,28 @@ b
 ## Installation
 Please install the following dependencies to run the application properly:
 
-c
+First, git clone the repository from my GitHub, Second, npm int inquirer, Third cd into the Develop folder, Fourth, node index.js and enter in the infromation you would want the rReadMe to see. Once completed, the file should be under the Example folder
 
 ## Usage:
 Below are the instructions and examples for use: 
-d
+Git Clone repository, npm int inquirer, cd into develop folder, node index.js and enter information, enter required info, file genertated in Example folder
 
 Screenshot located at:
 assets/images/Screenshot.png
 
 ## Contributors:
-e
+Google
 
 ## Tests:
 The following are needed to run the test:
-f
+npm int inquirer, node index.js
 
 ## License under the following:
- Apache License
- ### [![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
- [Apache License](https://choosealicense.com/licenses/apache-2.0/)
+ ### [![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
+ This application is licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
 
 ## Questions
 If you have any questions, please open a issue or contact the following:
 
-Github Profile Contact: https://github.com/g
-Email Contact: h
+Github Profile Contact: https://github.com/BenYeung4
+Email Contact: byeungis@gmail.com
