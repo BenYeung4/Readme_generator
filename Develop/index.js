@@ -1,48 +1,75 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 
-const fs = require("fs");
+//generate the readme template under utils with generateMarkdown
 const generatorMarkdown = require("./utils/generateMarkdown");
+
 const util = require("util");
+const fs = require("fs");
 
 // TODO: Create an array of questions for user input
-
 const questions = [
   {
     type: "input",
     name: "Title",
-    message: "What is the title of the project?",
+    message: "What is the title of the project? (Required)",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please enter a Title for this project!");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Description",
     message:
-      "What is the project about?  Give a detailed description of your project.",
+      "Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please enter a description for this project!");
+        return false;
+      }
+    },
   },
-  // {
-  //   type: "input",
-  //   name: "Content",
-  //   message: "Table of Content",
-  // },
   {
     type: "input",
-    name: "Install",
-    message: "What does the user need to install to run this app?",
+    name: "Installation",
+    message:
+      "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log(
+          "Please provide a list of what needs to be installed for the program:"
+        );
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Usage",
-    message: "How is the app used? Provide instructions",
-  },
-  {
-    type: "input",
-    name: "License",
-    message: "What license is being used?",
+    message: "Provide instructions and examples for use:",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please state the instructions on how the app is used:");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Contributing",
-    message: "Who contributed to this project?",
+    message:
+      "List your collaborators, if any, with links to their GitHub profiles:",
   },
   {
     type: "input",
@@ -50,19 +77,38 @@ const questions = [
     message: "What commands are needed to test this app?",
   },
   {
-    type: "input",
-    name: "Contact",
-    message: "Contact info for inquiries",
+    type: "checkbox",
+    name: "License",
+    message: "What license is used for the application?",
+    choices: ["Apache License", "GNU License", "MIT License", "N/A"],
   },
   {
     type: "input",
-    name: "Gitusername",
+    name: "Username",
     message: "What is your Github username?",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log("Please enter your GitHub username!");
+        return false;
+      }
+    },
   },
   {
     type: "input",
     name: "Email",
     message: "What is your email?",
+    validate: (nameInput) => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log(
+          "Please enter your Email that you would like to recieve messages in!"
+        );
+        return false;
+      }
+    },
   },
 ];
 
@@ -74,7 +120,7 @@ function writeToFile(fileName, data) {
     if (err) {
       return console.log(err);
     } else {
-      console.log("success");
+      console.log("README.md has been created");
     }
   });
 }
@@ -82,26 +128,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
   inquirer.prompt(questions).then(function (data) {
-    writeToFile("README.md", generatorMarkdown(data));
+    writeToFile("../Example/README.md", generatorMarkdown(data));
     console.log(data);
   });
 }
 
 // Function call to initialize app
 init();
-
-// GIVEN a command-line application that accepts user input
-// WHEN I am prompted for information about my application repository
-// THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
