@@ -1,8 +1,8 @@
 
-# 1
-[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)(https://choosealicense.com/licenses/apache-2.0/)]
+# a
+[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
 ## Description
-2
+b
 
 ## Table of Content
 - [Installation](#Installation)
@@ -15,29 +15,29 @@
 ## Installation
 Please install the following dependencies to run the application properly:
 
-3
+c
 
 ## Usage:
 Below are the instructions and examples for use: 
-4
+d
 
 Screenshot located at:
 assets/images/Screenshot.png
 
 ## Contributors:
-5
+e
 
 ## Tests:
 The following are needed to run the test:
-6
+f
 
 ## License under the following:
  Apache License
- ###[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)(https://choosealicense.com/licenses/apache-2.0/)]
+ ###[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
  MISSING LICENSE LINK
 
 ## Questions
 If you have any questions, please open a issue or contact the following:
 
-Github Profile Contact: https://github.com/7
-Email Contact: 8
+Github Profile Contact: https://github.com/g
+Email Contact: h
