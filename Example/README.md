@@ -1,8 +1,8 @@
 
-# 1
+# Readme example
 [![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
 ## Description
-2
+input project info for Readme.md
 
 ## Table of Content
 - [Installation](#Installation)
@@ -15,21 +15,21 @@
 ## Installation
 Please install the following dependencies to run the application properly:
 
-3
+lots of steps but this line will be just an example~~~
 
 ## Usage:
 Below are the instructions and examples for use: 
-4
+step 1, step 2, step 3 ~~~~ etc.
 
 Screenshot located at:
 ![Screenshot](https://user-images.githubusercontent.com/52897163/174462984-c4b06b85-488e-4cf1-b7cf-c89a42bb08ed.png)
 
 ## Contributors:
-5
+GOOGLE
 
 ## Tests:
 The following are needed to run the test:
-6
+npm init, npm init inquirer, node index.js
 
 ## License under the following:
  ### [![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)
@@ -38,5 +38,5 @@ The following are needed to run the test:
 ## Questions
 If you have any questions, please open a issue or contact the following:
 
-Github Profile Contact: https://github.com/7
-Email Contact: 8
+Github Profile Contact: https://github.com/BenYeung4
+Email Contact: byeungis@gmail.com
