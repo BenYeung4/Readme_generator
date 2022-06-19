@@ -77,7 +77,7 @@ const questions = [
     message: "What commands are needed to test this app?",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "License",
     message: "What license is used for the application?",
     choices: ["Apache License", "GNU License", "MIT License", "N/A"],
