@@ -8,7 +8,7 @@ function renderLicenseBadge(License) {
   } else if (License === "MIT License") {
     return `[![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://choosealicense.com/licenses/mit/)`;
   } else {
-    return "MISSING LICENSE BADGE";
+    return "MISSING LICENSE BADGE & LINK";
   }
 }
 
@@ -67,8 +67,8 @@ ${data.Tests}
 
 ## License under the following:
  ${data.License}
- ###${renderLicenseBadge(data.License)}
- ${renderLicenseLink(data.Licnese)}
+ ### ${renderLicenseBadge(data.License)}
+ ${renderLicenseLink(data.License)}
 
 ## Questions
 If you have any questions, please open a issue or contact the following:

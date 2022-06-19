@@ -33,8 +33,8 @@ f
 
 ## License under the following:
  Apache License
- ###[![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
- MISSING LICENSE LINK
+ ### [![Apache License](https://img.shields.io/badge/License-Apachi-brightgreen)](https://choosealicense.com/licenses/apache-2.0/)
+ [Apache License](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Questions
 If you have any questions, please open a issue or contact the following:
